@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .autos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .auto {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .auto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .auto h3 {
+            margin: 10px 0;
+        }
+
+        .precio {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AutoMarket</h1>
+    <p>Venta de Autos Nuevos y Usados</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Autos</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>Autos Disponibles</h2>
+
+    <div class="autos">
+
+        <div class="auto">
+            <img src="https://www.16valvulas.com.ar/test-drive-nuevo-ford-fiesta-titanium-at-2018/" alt="Auto 1">
+            <h3>Ford Fiesta 2018</h3>
+            <p>Motor 1.6 - 80.000 km</p>
+            <p class="precio">$8.500.000</p>
+            <button onclick="consultar('Ford Fiesta 2018')">Consultar</button>
+        </div>
+
+        <div class="auto">
+            <img src="https://via.placeholder.com/300x200" alt="Auto 2">
+            <h3>Chevrolet Onix 2020</h3>
+            <p>Motor 1.4 - 40.000 km</p>
+            <p class="precio">$10.200.000</p>
+            <button onclick="consultar('Chevrolet Onix 2020')">Consultar</button>
+        </div>
+
+        <div class="auto">
+            <img src="https://via.placeholder.com/300x200" alt="Auto 3">
+            <h3>Volkswagen Gol 2019</h3>
+            <p>Motor 1.6 - 60.000 km</p>
+            <p class="precio">$9.300.000</p>
+            <button onclick="consultar('Volkswagen Gol 2019')">Consultar</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 AutoMarket - Todos los derechos reservados</p>
+</footer>
+
+<script>
+    function consultar(auto) {
+        alert("Consulta enviada por: " + auto);
+    }
+</script>
+
+</body>
+</html>
